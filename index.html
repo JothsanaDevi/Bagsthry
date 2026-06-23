@@ -70,10 +70,7 @@
 
         /* Hero Background Dynamic Overlay using the dramatic Sewing Machine close-up */
         .hero-bg {
-            background-image: linear-gradient(rgba(15, 15, 15, 0.65), rgba(15, 15, 15, 0.85)), url('ChatGPT Image Jun 4, 2026, 08_19_25 PM.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: linear-gradient(135deg, #0B0B0C 0%, #18181C 100%);
         }
 
         /* Seamless Bleed for studio photos */
@@ -864,39 +861,58 @@
 </a>
 
 
+
     <!-- HERO SECTION -->
     <section id="home" class="relative hero-bg min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/40 to-transparent"></div>
         <div class="container mx-auto px-6 md:px-12 relative z-10 text-white">
-            <div class="max-w-4xl">
-                <div class="inline-flex items-center border border-white/20 bg-white/5 backdrop-blur-md rounded-full px-4 py-2 mb-8">
-                    <span class="w-2.5 h-2.5 rounded-full bg-coral mr-3 animate-pulse"></span>
-                    <span class="text-xs md:text-sm font-semibold tracking-widest uppercase text-gray-200">World-Class Manufacturing Hub • Tiruppur, India</span>
-                </div>
+    <div class="grid lg:grid-cols-[1.8fr_1fr] gap-4 items-center">
 
-                <h1 class="font-heading text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.1] font-normal mb-8">
-                    YOUR NEXT<br>
-                    <span class="text-coral italic pr-4">BEST-SELLING BAG</span><br>
-                    STARTS HERE.
-                </h1>
+        <!-- LEFT CONTENT -->
+        <div class="max-w-5xl">
+            <div class="inline-flex items-center border border-white/20 bg-white/5 backdrop-blur-md rounded-full px-4 py-2 mb-8">
+                <span class="w-2.5 h-2.5 rounded-full bg-coral mr-3 animate-pulse"></span>
+                <span class="text-xs md:text-sm font-semibold tracking-widest uppercase text-gray-200">
+                    World-Class Manufacturing Hub • Tiruppur, India
+                </span>
+            </div>
 
-                <p class="text-lg md:text-xl font-light text-gray-300 mb-12 max-w-2xl leading-relaxed">
-                    From design blueprints and precision sampling to bulk weaving, sewing, and direct global logistics. We serve premium brands worldwide with ethical, high-quality, and robust fabric bag production.
-                </p>
+            <h1 class="font-heading text-6xl md:text-7xl lg:text-[6rem] leading-[0.95] font-normal mb-8">
+                YOUR NEXT<br>
+                <span class="text-coral italic pr-4">BEST-SELLING BAG</span><br>
+                STARTS HERE.
+            </h1>
 
-                <div class="flex flex-wrap gap-5 mb-16">
-                    <a href="#quote-estimator" class="px-8 py-4 bg-coral text-white rounded-full font-medium hover:bg-[#d65f42] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300 text-sm md:text-base">
-                        Get Your Quote
-                    </a>
-                    <a href="#capabilities" class="px-8 py-4 bg-transparent border border-white/40 text-white rounded-full font-medium hover:bg-white hover:text-dark transition-all duration-300 text-sm md:text-base">
-                        View Capabilties Gallery
-                    </a>
-                </div>
+            <p class="text-lg md:text-xl font-light text-gray-300 mb-12 max-w-2xl leading-relaxed">
+                From design blueprints and precision sampling to bulk weaving, sewing, and direct global logistics.
+                We serve premium brands worldwide with ethical, high-quality, and robust fabric bag production.
+            </p>
 
-               
+            <div class="flex flex-wrap gap-5">
+                <a href="#quote-estimator" class="px-8 py-4 bg-coral text-white rounded-full font-medium hover:bg-[#d65f42] transition-colors">
+                    Get Your Quote
+                </a>
+
+                <a href="#capabilities" class="px-8 py-4 border border-white/40 text-white rounded-full hover:bg-white hover:text-dark transition-all duration-300">
+                    View Capabilities Gallery
+                </a>
             </div>
         </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hidden lg:flex justify-end -mr-40 -mt-16">
+            <img
+                src="Header.jpeg"
+                alt="Bag Manufacturing"
+                class="w-full max-w-2xl h-[600px] rounded-3xl shadow-2xl object-cover"
+            >
+        </div>
+
+    </div>
+</div>
+        </div>
     </section>
+
 
     <!-- INTRO/SERVICES SECTION -->
     <section class="py-24 bg-bglight" id="services">
